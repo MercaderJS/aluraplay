@@ -1,0 +1,47 @@
+/* contenedor header */
+.cabecera__container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    top:0%;
+}
+
+/* barra de busqueda */
+.cabecera__buscar__item {
+    display: none;
+    
+}
+
+.superior__seccion__container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    white-space:nowrap;
+    overflow:inherit;
+    scrollbar-width: none;
+
+
+}
+
+/* footer contenedor */
+.rodapie__container {
+    display: flex;
+    flex-flow: column wrap;
+    
+
+}
+
+/* para tablet y mas grandes */
+@media (min-width:834px) {
+    
+    /* header contenedor */
+    .cabecera__buscar__item {
+        display: block;
+    }
+    /* header contenedor*/
+    .rodapie__container {
+        justify-content: space-between;
+    }
+    
+}
