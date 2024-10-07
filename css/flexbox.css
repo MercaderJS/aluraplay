@@ -45,8 +45,14 @@
 /* iconos barra lateral*/
 .menu__lista {
     display: flex;
-    gap: 1rem;
-    
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+/* iconos y texto en menu */
+.menu__lista li {
+    align-self:center;
 }
 
 
@@ -58,8 +64,8 @@
 
 }
 
-/* para tablet y mas grandes */
-@media (min-width:834px) {
+/* visualizacion en celulares */
+@media (max-width:767px) {
     
     /* header contenedor */
     .cabecera__buscar__item {
@@ -70,4 +76,168 @@
         justify-content: space-between;
     }
     
+    /* barra de busqueda */
+    .cabecera__buscar__item {
+        display: none;
+        
+    }
+    
+    /* barra de categoria scroll */
+    .superior__seccion__container {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        white-space:nowrap;
+        overflow:inherit;
+        scrollbar-width: none;
+    
+    
+    }
+    
+    /* menu lateral */
+    .menu__container {
+        position: fixed;
+        bottom: 0%;
+        height:74px;
+        width: 100%;
+        
+    }
+    
+    /* items del menu */
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+        display:none;
+        
+    }
+    
+    /* iconos barra lateral*/
+    .menu__lista {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+    
+    }
+    
+    /* iconos y texto en menu */
+    .menu__lista li {
+        align-self:center;
+    }
+
+    .menu__itens {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    /* footer contenedor */
+    .rodapie__container {
+        display: flex;
+        flex-flow: column wrap;
+        
+    
+    }
+
+
+    
+}
+
+
+/* vista para tablets */
+@media (min-width:768px) {
+
+    /* barra de busqueda */
+.cabecera__buscar__item {
+    display: none;
+    
+}
+
+/* barra de categoria scroll */
+.superior__seccion__container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    white-space:nowrap;
+    overflow:inherit;
+    scrollbar-width: none;
+
+
+}
+
+/* menu lateral */
+.menu__container {
+    position: fixed;
+    left: 0%;
+    height:87.4%;
+    width: 82px;
+    
+}
+
+/* items del menu */
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display:none;
+    
+}
+
+/* iconos barra lateral*/
+.menu__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    gap: 19px;
+
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* iconos y texto en menu */
+.menu__lista li {
+    align-self:center;
+
+}
+
+
+/* footer contenedor */
+.rodapie__container {
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.menu__itens {
+    gap: 10px;
+}
+
+}
+
+
+/* vista para desktop */
+
+
+@media(min-width:1440px) {
+    
+    .menu__container {
+        width: 239px;
+        overflow: scroll;
+        
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+    display:flex;
+    
+    }
+    
+
 }
