@@ -241,7 +241,9 @@
 
     .menu__lista {
         height: auto;
+        gap: 30px;
     }
+
     
 
 }
