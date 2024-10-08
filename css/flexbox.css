@@ -48,11 +48,13 @@
     justify-content: space-around;
     height: 100%;
 
+
 }
 
 /* iconos y texto en menu */
 .menu__lista li {
     align-self:center;
+    padding: 20px 17px 20px 15px;
 }
 
 
@@ -116,12 +118,14 @@
         display: flex;
         justify-content: space-around;
         height: 100%;
+        width: auto;
     
     }
     
     /* iconos y texto en menu */
     .menu__lista li {
         align-self:center;
+        
     }
 
     /*icono y texto*/
@@ -164,6 +168,7 @@
     white-space:nowrap;
     overflow:inherit;
     scrollbar-width: none;
+    left: 8%;
 
 
 }
@@ -173,7 +178,7 @@
     position: fixed;
     left: 0%;
     height:87.4%;
-    width: 82px;
+    width: 8%;
     
 }
 
@@ -191,7 +196,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    gap: 19px;
+    gap: 19px;    
 
 }
 
