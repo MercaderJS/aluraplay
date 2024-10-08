@@ -9,7 +9,7 @@
 
 /* barra de busqueda */
 .cabecera__buscar__item {
-    display: none;
+    display: block;
     
 }
 
@@ -124,6 +124,7 @@
         align-self:center;
     }
 
+    /*icono y texto*/
     .menu__itens {
         display: flex;
         flex-direction: column;
@@ -151,7 +152,7 @@
 
     /* barra de busqueda */
 .cabecera__buscar__item {
-    display: none;
+    display: block;
     
 }
 
@@ -167,7 +168,7 @@
 
 }
 
-/* menu lateral */
+/* contenedor menu lateral */
 .menu__container {
     position: fixed;
     left: 0%;
@@ -184,7 +185,7 @@
     
 }
 
-/* iconos barra lateral*/
+/* elementos dentro del menu lateral*/
 .menu__lista {
     display: flex;
     flex-direction: column;
@@ -194,13 +195,14 @@
 
 }
 
+/* elementos individuales del menu lateral*/
 .menu__itens {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+
 }
 
-/* iconos y texto en menu */
+/* alineacion de elementos del menu en eje transversal */
 .menu__lista li {
     align-self:center;
 
@@ -214,24 +216,29 @@
     
 }
 
-.menu__itens {
-    gap: 10px;
-}
+
+
 
 }
 
 
 /* vista para desktop */
 
-
 @media(min-width:1440px) {
-    
+
+    .cabecera__buscar__item {
+        display: block;
+        color: black;
+        
+    }
+    /* contenedor del menu */
     .menu__container {
         width: 239px;
         overflow: scroll;
         
     }
 
+    /* secciones del menu lateral */
     .menu__lista:nth-child(2),
     .menu__lista:nth-child(3),
     .menu__lista:nth-child(4){
@@ -239,9 +246,11 @@
     
     }
 
+    /* elementos dentro del menu */
     .menu__lista {
         height: auto;
         gap: 30px;
+        padding-bottom: 5px;
     }
 
     
