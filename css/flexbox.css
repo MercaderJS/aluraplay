@@ -47,6 +47,8 @@
     display: flex;
     justify-content: space-around;
     height: 100%;
+    padding: 20px 17px 20px 15px;
+    gap: 15px;
 
 
 }
@@ -54,7 +56,7 @@
 /* iconos y texto en menu */
 .menu__lista li {
     align-self:center;
-    padding: 20px 17px 20px 15px;
+   
 }
 
 
@@ -177,7 +179,7 @@
 .menu__container {
     position: fixed;
     left: 0%;
-    height:87.4%;
+    height:83%;
     width: 8%;
     
 }
@@ -233,15 +235,18 @@
 
     .cabecera__buscar__item {
         display: block;
-        color: black;
         
     }
+
     /* contenedor del menu */
     .menu__container {
-        width: 239px;
+        width: 8%;
+        height: 86%;
         overflow: scroll;
         
     }
+
+    
 
     /* secciones del menu lateral */
     .menu__lista:nth-child(2),
@@ -251,11 +256,37 @@
     
     }
 
-    /* elementos dentro del menu */
     .menu__lista {
         height: auto;
-        gap: 30px;
-        padding-bottom: 5px;
+    
+    }
+
+    /* seccion 3 del menu */
+
+    /* enlace a videojuegos */
+    .videojuegos {
+        order: 1;
+    }
+
+    /* enlace a peliculas */
+    .peliculas {
+        order: 2;
+    }
+
+    /* enalce a premium */
+    .premium {
+        order: 3;
+    }
+
+    .menu__itens--maspagina {
+        order: 4;
+    }
+
+
+    .menu__itens {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
     }
 
     

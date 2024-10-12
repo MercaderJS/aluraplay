@@ -45,6 +45,7 @@ body {
     font-size: 16px;
     padding: 3px 8px;
     border: 1px solid rgb(211, 211, 211);
+    color: black;
 }
 
 .buscar__label {
