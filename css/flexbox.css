@@ -19,10 +19,15 @@
     gap: 1rem;
     align-items: center;
     white-space:nowrap;
-    overflow:inheritz;
+    overflow:inherit;
     scrollbar-width: none;
 
 
+}
+
+.contenedor__principal {
+    overflow: auto;
+    
 }
 
 /* menu lateral */
@@ -57,6 +62,33 @@
 .menu__lista li {
     align-self:center;
    
+}
+
+.videos__container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* seccion de videos */
+.videos__item {
+    width: 279px;
+    height: 279px;
+    margin: 25px;
+
+}
+
+/* datos del video */
+.descripcion-video {
+   display: flex;
+   justify-content: space-between;
+}
+
+/* titulo y texto del video */
+.detalles__video {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -179,7 +211,7 @@
 .menu__container {
     position: fixed;
     left: 0%;
-    height:83%;
+    height:87.2%;
     width: 8%;
     
 }
