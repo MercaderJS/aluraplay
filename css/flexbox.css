@@ -13,6 +13,15 @@
     
 }
 
+/* imagenes */
+img {
+    width: 32px;
+    height: 32px;
+
+}
+
+
+
 /* barra de categoria scroll */
 .superior__seccion__container {
     display: flex;
@@ -67,29 +76,56 @@
 .videos__container {
     display: flex;
     flex-wrap: wrap;
-
+    gap: 10px;
+    width:auto;
+    height: auto;
+    margin-bottom:2%;
+    padding-left: 10%;
+    overflow: hidden;
 }
 
 /* seccion de videos */
 .videos__item {
-    width: 279px;
-    height: 279px;
-    margin: 25px;
+    width: 272px;
+    height: 214px;
+    margin-top: 40px;
+    
 
 }
 
-/* datos del video */
+/* contenedor datos del video */
 .descripcion-video {
    display: flex;
-   justify-content: space-between;
+   align-items: initial;
+   gap: 16px;
+   width: max-content;
+   margin-top: 8px;
+   line-height: 1rem;
+
 }
 
 /* titulo y texto del video */
 .detalles__video {
     display: flex;
     flex-direction: column;
+    width: 200px;
+    text-align: initial;
+    height: 55px;
+    justify-content: space-between;
+    margin-top: 7px;
 
 }
+
+
+.detalles__video h3 {
+    font-size: 0.79rem;
+
+}
+.detalles__video p {
+    font-size: 0.72rem;
+}
+
+
 
 
 /* footer contenedor */
@@ -128,6 +164,17 @@
         scrollbar-width: none;
     
     
+    }
+
+    .videos__container {
+        margin-right: 4%;
+
+    }
+
+    .videos__item {
+        width: 100%;
+        height: 12.5rem;
+
     }
     
     /* menu lateral */
@@ -186,7 +233,7 @@
 
 
 /* vista para tablets */
-@media (min-width:768px) {
+@media (min-width:768px){
 
     /* barra de busqueda */
 .cabecera__buscar__item {
@@ -206,6 +253,19 @@
 
 
 }
+
+/* contenedor de videos */
+.videos__container {
+    width: 100%;
+    margin-left: 4%;
+}
+
+/* contenedores individuales de videos */
+.videos__item {
+    width: auto;
+    height: auto;
+}
+
 
 /* contenedor menu lateral */
 .menu__container {
@@ -263,8 +323,13 @@
 
 /* vista para desktop */
 
-@media(min-width:1440px) {
+@media(min-width:1024px) {
+    /* scroll horizontal de categoria de video */
+    .superior__seccion__container {
+        margin-left:2%;
+    }
 
+    /* barra de busqueda */
     .cabecera__buscar__item {
         display: block;
         
@@ -272,10 +337,21 @@
 
     /* contenedor del menu */
     .menu__container {
-        width: 8%;
-        height: 86%;
+        width: 10%;
+        height: 87%;
         overflow: scroll;
+        align-items: initial;
+        overflow-x: hidden;
         
+    }
+
+    .videos__container {
+        padding-bottom: 1%;
+    }
+    /* contenedor individual de video */
+    .videos__item {
+        width: 250px;
+        height: 195px;
     }
 
     
@@ -290,7 +366,8 @@
 
     .menu__lista {
         height: auto;
-    
+
+
     }
 
     /* seccion 3 del menu */
